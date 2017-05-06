@@ -154,7 +154,7 @@ NSString * const SCRecordSessionDocumentDirectory = @"DocumentDirectory";
 
 - (void)dispatchSyncOnSessionQueue:(void(^)())block {
     SCRecorder *recorder = self.recorder;
-    
+    // Commenting out async session, causes problems on iphone 7 for god knows why
 //    if (recorder == nil || [SCRecorder isSessionQueue]) {
         block();
 //    } else {
