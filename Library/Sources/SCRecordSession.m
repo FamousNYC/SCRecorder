@@ -155,11 +155,11 @@ NSString * const SCRecordSessionDocumentDirectory = @"DocumentDirectory";
 - (void)dispatchSyncOnSessionQueue:(void(^)())block {
     SCRecorder *recorder = self.recorder;
     
-    if (recorder == nil || [SCRecorder isSessionQueue]) {
+//    if (recorder == nil || [SCRecorder isSessionQueue]) {
         block();
-    } else {
-        dispatch_sync(recorder.sessionQueue, block);
-    }
+//    } else {
+//        dispatch_sync(recorder.sessionQueue, block);
+//    }
 }
 
 - (void)removeFile:(NSURL *)fileUrl {
