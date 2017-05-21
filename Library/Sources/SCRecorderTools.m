@@ -59,9 +59,9 @@
 }
 
 + (NSString *)captureSessionPresetForDimension:(CMVideoDimensions)videoDimension {
-    if (videoDimension.width >= 1920 && videoDimension.height >= 1080) {
-        return AVCaptureSessionPreset1920x1080;
-    }
+//    if (videoDimension.width >= 1920 && videoDimension.height >= 1080) {
+//        return AVCaptureSessionPreset1920x1080;
+//    }
     if (videoDimension.width >= 1280 && videoDimension.height >= 720) {
         return AVCaptureSessionPreset1280x720;
     }
